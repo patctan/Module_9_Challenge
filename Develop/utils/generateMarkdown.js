@@ -8,6 +8,7 @@ function renderLicenseLink(license) {}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
+//Within inquirer.js, the type should be 'list'
 function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README

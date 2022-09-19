@@ -1,21 +1,63 @@
 // TODO: Include packages needed for this application
 const inquirer = require("inquirer");
-const badmath = require("Develop/utils/generateMarkdown.js");
+const generateMarkdown = require("./utils/generateMarkdown");
+const fs = require("fs");
+
 // TODO: Create an array of questions for user input
 const questions = [
-  "What is the title of your project?",
-  "What is the description of your project?",
-  "What are the installation instructions for your project?",
-  "What is the usage information for your project?",
-  "What are the contribution guidelines of your project?",
-  "What are the test instructions of your project?",
+  {
+    type: "input",
+    message: "What is the title of your project?",
+    name: "username",
+  },
+  {
+    type: "list",
+    message: "What's the license going to be?",
+    choices: ["License #1", "License #2", "License#3"],
+    name: "license",
+  },
+  {
+    type: "input",
+    message: "Please write a description of your project.",
+    name: "description",
+  },
+  {
+    type: "input",
+    message: "What are the installation instructions for your project?",
+    name: "installation_Instructions",
+  },
+  {
+    type: "input",
+    message: "What is the usage information for your project?",
+    name: "usage_Information",
+  },
+  {
+    type: "input",
+    message: "What are the contribution guidelines of your project?",
+    name: "contribution_Guidelines",
+  },
+  {
+    type: "input",
+    message: "What are the test instructions of your project?",
+    name: "test_Instructions",
+  },
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(data) {
+  fs.writeFile("log.txt", data, (err) =>
+    err ? console.error(err) : console.log("Success!")
+  );
+}
 
 // TODO: Create a function to initialize app
-function init() {}
+//Create a string, save it to a file
+async function init() {
+  var promptInput = await inquirer.prompt(questions);
+  console.log(promptInput);
+  var aString = generateMarkdown(promptInput);
+  writeToFile(aString);
+}
 
 // Function call to initialize app
 init();
