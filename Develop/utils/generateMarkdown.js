@@ -20,7 +20,7 @@ function generateMarkdown(data) {
 
   ${data.description}
   
-  ## Table of Contents (Optional)
+  ## Table of Contents
   
   - [Installation](#installation)
   - [Usage](#usage)
@@ -57,6 +57,12 @@ function generateMarkdown(data) {
   ## Tests
   
   ${data.test_Instructions}
+
+  ## Questions
+
+  GitHub: www.github.com/${gitHub}
+
+  Email: ${email}
 `;
 }
 
