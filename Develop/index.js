@@ -11,9 +11,9 @@ const questions = [
     name: "title",
   },
   {
-    type: "list",
-    message: "What's the license going to be?",
-    choices: ["License #1", "License #2", "License#3"],
+    type: "checkbox",
+    message: "What licenses are you using?",
+    choices: ["MIT", "GNU", "Apache", "ISC", "non"],
     name: "license",
   },
   {
