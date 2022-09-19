@@ -12,9 +12,51 @@ function renderLicenseLink(license) {}
 function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README
+//The name in the question object properties is can be targeted by doing data.____
 function generateMarkdown(data) {
   return `# ${data.title}
 
+  ## Description
+
+  ${data.description}
+  
+  ## Table of Contents (Optional)
+  
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Credits](#credits)
+  - [License](#license)
+  - [Features](#features)
+  - [Contribution Guidelines](#how-to-contribute)
+  - [Tests](#tests)
+  
+  ## Installation
+  
+  ${data.installation_Instructions}
+  
+  ## Usage
+  
+  ${data.usage_Information}
+
+  ## Credits
+
+  ${data.credits}
+  
+  ## License
+  
+  ${data.license}
+  
+  ## Features
+  
+  ${data.features}
+  
+  ## How to Contribute
+  
+  ${data.contribution_Guidelines}
+  
+  ## Tests
+  
+  ${data.test_Instructions}
 `;
 }
 

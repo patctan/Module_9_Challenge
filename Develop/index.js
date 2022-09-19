@@ -8,7 +8,7 @@ const questions = [
   {
     type: "input",
     message: "What is the title of your project?",
-    name: "username",
+    name: "title",
   },
   {
     type: "list",
@@ -28,8 +28,18 @@ const questions = [
   },
   {
     type: "input",
+    message: "Who would you like to credit for this project?",
+    name: "credits",
+  },
+  {
+    type: "input",
     message: "What is the usage information for your project?",
     name: "usage_Information",
+  },
+  {
+    type: "input",
+    message: "What are the features of your project?",
+    name: "features",
   },
   {
     type: "input",
