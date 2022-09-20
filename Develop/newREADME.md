@@ -1,43 +1,51 @@
 # myTitle
 
-## Description
+  ![licenseBadge](https://img.shields.io/badge/license-MIT-green.svg)
 
-myDescription
+  ## Description
 
-## Table of Contents (Optional)
+  myDescription
+  
+  ## Table of Contents
+  
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Credits](#credits)
+  - [License](#license)
+  - [Features](#features)
+  - [Contribution Guidelines](#how-to-contribute)
+  - [Tests](#tests)
+  
+  ## Installation
+  
+  myInstallationInstructions
+  
+  ## Usage
+  
+  myUsageInformation
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
-- [Features](#features)
-- [Contribution Guidelines](#how-to-contribute)
-- [Tests](#tests)
+  ## Credits
 
-## Installation
+  myCredits
+  
+  ## License
+    
+  This project is licensed by MIT
+  
+  ## Features
+  
+  myFeatures
+  
+  ## How to Contribute
+  
+  myContributionGuidelines
+  
+  ## Tests
+  
+  myTestInstructions
 
-myInstallationInstructions
+  ## Questions
 
-## Usage
+  GitHub: www.github.com/myGitHubUsername
 
-myUsageInformation
-
-## Credits
-
-myCredits
-
-## License
-
-License #1
-
-## Features
-
-myFeatures
-
-## How to Contribute
-
-myContributionGuidelines
-
-## Tests
-
-myTestInstructions
+  Email: myEmailAddress
